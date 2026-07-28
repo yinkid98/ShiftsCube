@@ -1,0 +1,156 @@
+.allwedo__section {
+  padding: 60px 10%;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+/* Header */
+.allwedo__header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.allwedo__header p {
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Grid Layout */
+.allwedo__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+/* Cards */
+.allwedo__card {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.allwedo__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.allwedo__image {
+  width: 45%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.allwedo__content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.allwedo__content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.allwedo__content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.allwedo__link {
+  color: #0066cc;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.allwedo__link:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------
+   ✅ Responsive Styles
+-------------------------------- */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .allwedo__section {
+    padding: 50px 6%;
+  }
+
+  .allwedo__header h2 {
+    font-size: 24px;
+  }
+
+  .allwedo__header p {
+    font-size: 15px;
+  }
+
+  .allwedo__grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+  }
+
+  .allwedo__card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .allwedo__image {
+    width: 100%;
+    height: 220px;
+  }
+
+  .allwedo__content {
+    padding: 18px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  .allwedo__section {
+    padding: 40px 5%;
+  }
+
+  .allwedo__header h2 {
+    font-size: 22px;
+  }
+
+  .allwedo__header p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .allwedo__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .allwedo__card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .allwedo__image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .allwedo__content h3 {
+    font-size: 16px;
+  }
+
+  .allwedo__content p {
+    font-size: 13px;
+  }
+}
